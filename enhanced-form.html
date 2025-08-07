@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Form Page</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Our Registration Page</h1>
+  <p>This page demonstrates lists, tables, media, and a fully accessible HTML5 form.</p>
+</header>
+
+<main>
+
+  <!-- Section: List -->
+  <section>
+    <h2>Benefits of Registering</h2>
+    <ul>
+      <li>Receive exclusive offers and updates</li>
+      <li>Access member-only resources</li>
+      <li>Get early invites to new events</li>
+    </ul>
+  </section>
+
+  <!-- Section: Table -->
+  <section>
+    <h2>Our Team</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Udoefe Mary Ima</td>
+          <td>Lead Confectioner</td>
+          <td>Ibada, Nigeria</td>
+        </tr>
+        <tr>
+          <td>John Patrick</td>
+          <td>Real Estate Consultant</td>
+          <td>Lagos, Nigeria</td>
+        </tr>
+        <tr>
+          <td>Grace Onoh</td>
+          <td>Wellness Coach</td>
+          <td>Enugu, Nigeria</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Media -->
+  <section>
+    <h2>Our Workspace</h2>
+    <img src="https://images.pexels.com/photos/4348082/pexels-photo-4348082.jpeg"  alt="Workspace" />
+  </section>
+
+  <!-- Section: Form -->
+  <section>
+    <h2>Register Here</h2>
+    <form action="#" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="e.g., John May" minlength="3" />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="e.g., johnmay@example.com" />
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}" placeholder="e.g., 08012345678" />
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="password">Create Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Min 6 characters" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences & Other Info</legend>
+
+        <label for="gender">Gender *</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select --</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label>Skills *</label>
+        <label><input type="checkbox" name="skills" value="HTML" required /> HTML</label>
+        <label><input type="checkbox" name="skills" value="CSS" /> CSS</label>
+        <label><input type="checkbox" name="skills" value="JavaScript" /> JavaScript</label>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+
+        <label for="photo">Upload Your Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*" />
+
+        <label for="refcode">Referral Code</label>
+        <input type="text" id="refcode" name="refcode" readonly value="AUTO2025" />
+      </fieldset>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Registration Portal. Designed by Marymagdalene Udoefe</p>
+</footer>
+
+</body>
+</html>
